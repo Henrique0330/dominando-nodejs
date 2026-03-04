@@ -1,5 +1,5 @@
-const express = require("express");
-const routes = require("./routes");
+import express from "express";
+import routes  from "./routes";
 
 
 class App {
@@ -17,7 +17,7 @@ class App {
     }
 }
 
-module.exports = new App().server;
+export default new App().server;
 
 
 //camada que se adiciona entre a requisição e a resposta, ou seja, é um código que é executado antes de chegar na rota, ou seja, antes de chegar no controller. Exemplo: autenticação, validação, etc.
