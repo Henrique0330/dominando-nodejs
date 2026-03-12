@@ -10,4 +10,4 @@ routes.post("/customers", customers.create);
 routes.put("/customers/:id", customers.update);
 routes.delete("/customers/:id", customers.destroy);
 
-export default routes;            
+export default routes;
